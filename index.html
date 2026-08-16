@@ -184,11 +184,11 @@
   <p class="byline">Compiled by <a href="https://www.linkedin.com/in/mauriciobermudezneubauer/" target="_blank" rel="noopener"><b>Dr. Mauricio Bermudez Neubauer</b></a><span class="sep">·</span><a href="https://mauriciobermudezneubauer.substack.com/" target="_blank" rel="noopener">Posting on Carbon strategy &amp; intelligence on Substack</a><span class="sep">·</span>July 2026</p>
 
   <div class="controlbar">
-    <span class="asof">Compiled as of <b id="baseline">2026-08-01</b></span>
+    <span class="asof">Compiled as of <b id="baseline">2026-08-16</b></span>
     <span class="spacer"></span>
     <span class="asof">Source links on each card are the ground truth</span>
   </div>
-  <p class="note">Maturity ratings reflect how consolidated each method is and where it is heading \u2014 not its technical quality, and <b>not</b> its legal status, for which see each card\u2019s adoption line. Every card links to its <b>authoritative source</b>.</p>
+  <p class="note">Maturity ratings reflect how consolidated each method is and where it is heading — not its technical quality, and <b>not</b> its legal status, for which see each card’s adoption line. Every card links to its <b>authoritative source</b>.</p>
 
   <div class="sectionlabel" id="at-a-glance">At a glance <span class="sub">— the whole stack on one view · click a layer to jump to its detail</span></div>
   <div class="summary"><div class="summary-scroll"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 2186" style="min-width:760px" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
@@ -634,7 +634,19 @@
 <rect x="480" y="1276" width="3" height="52" rx="0" fill="#B23A2A"/>
 <rect x="493" y="1291" width="6" height="6" fill="#B23A2A"/>
 <text x="508" y="1298" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#22303C" text-anchor="start">CORSIA Eligible Fuels</text>
-<text x="493" y="1316" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="400" fill="#5C7280" text-anchor="start" letter-spacing="0.01em">lifecycle CI · ISCC</text>
+<text x="493" y="1316" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="400" fill="#5C7280" text-anchor="start" letter-spacing="0.01em">lifecycle CI · ICAO defaults</text>
+<text x="850" y="1256" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="500" fill="#5C7280" text-anchor="start" letter-spacing="0.03em">CROSS-SECTOR SCHEMES</text>
+<line x1="848" y1="1264" x2="1200" y2="1264" stroke="#A6B7C1" stroke-width="1"/>
+<rect x="848" y="1276" width="352" height="52" rx="0" fill="#FBFCFD" stroke="#A6B7C1" stroke-width="1"/>
+<rect x="848" y="1276" width="3" height="52" rx="0" fill="#B23A2A"/>
+<rect x="861" y="1291" width="6" height="6" fill="#B23A2A"/>
+<text x="876" y="1298" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#22303C" text-anchor="start">ISCC</text>
+<text x="861" y="1316" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="400" fill="#5C7280" text-anchor="start" letter-spacing="0.01em">EU · PLUS · CORSIA · LCFS</text>
+<rect x="848" y="1336" width="352" height="52" rx="0" fill="#FBFCFD" stroke="#A6B7C1" stroke-width="1"/>
+<rect x="848" y="1336" width="3" height="52" rx="0" fill="#B23A2A"/>
+<rect x="861" y="1351" width="6" height="6" fill="#B23A2A"/>
+<text x="876" y="1358" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#22303C" text-anchor="start">Australia PGO</text>
+<text x="861" y="1376" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="400" fill="#5C7280" text-anchor="start" letter-spacing="0.01em">H₂ + green metals</text>
 </a>
 <a href="#layer-ccus" style="cursor:pointer">
 <text x="52.0" y="1434" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#2E7C93" text-anchor="middle">CO₂</text>
@@ -1094,6 +1106,12 @@ function card(s,L){
   c.append(meta);
   return c;
 }
+
+
+  // Keep the printed compiled-as-of date and version tied to the constants.
+  // Before v1.22 #baseline was hardcoded and had drifted two weeks behind BASELINE.
+  var _b=document.getElementById('baseline'); if(_b) _b.textContent=BASELINE;
+  var _v=document.getElementById('version');  if(_v) _v.textContent=VERSION;
 
 render();
 </script>
